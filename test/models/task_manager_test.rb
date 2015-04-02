@@ -1,6 +1,6 @@
 require_relative '../test_helper'
 
-class TaskManagerTest < ModelTest
+class TaskManagerTest < Minitest::Test
   def create_tasks(num)
     num.times do |x|
       TaskManager.create({ title: "my task#{x}", 
